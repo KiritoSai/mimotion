@@ -584,7 +584,7 @@ if __name__ == "__main__":
             elif str(step) == '0':
                 step = ''
             push_msg += main(user, passwd, step) + '\n'
-
+        to_push.push_msg = push_msg
         push = {
             'wx': to_push.to_push_wx,
             'nwx': to_push.to_push_server,
